@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatelessWidget {
   final List<String> menuItems = [
+    "timeline",
     "Prasar Seva",
     "Seva",
     "Sevekari Nodni",
@@ -14,6 +15,7 @@ class NavigationDrawer extends StatelessWidget {
   ];
 
   final List<IconData> menuItemIcons = [
+    Icons.timeline,
     null,
     null,
     null,
@@ -26,6 +28,7 @@ class NavigationDrawer extends StatelessWidget {
   ];
 
   final List<String> navDrawer = [
+    '/timeline',
     null,
     null,
     null,
