@@ -27,12 +27,12 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(primarySwatch: Colors.orange),
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => StateBuilder(
-          blocs: [mainBloc],
-          tag: 'auth',
-          builder: (BuildContext context, String tagID) {
-            return mainBloc.authenticateUser == null ? Auth() : HomePage();
-          },
-        ),
+              blocs: [mainBloc],
+              tag: 'auth',
+              builder: (BuildContext context, String tagID) {
+                return mainBloc.authenticateUser == null ? Auth() : HomePage();
+              },
+            ),
         '/homepage': (BuildContext context) => HomePage(),
         '/meet': (BuildContext context) => Meet(),
         '/notification': (BuildContext context) => NotificationReference(),
